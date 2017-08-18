@@ -4,7 +4,7 @@
 
 # TEAM
 
-    <Harry Francis> -- <Developer> -- <Twitter | (HarryFrancis) [https://twitter.com/harryfrancis]>
+    <Harry Francis> -- <Developer> -- <Twitter | (HarryFrancis)[https://twitter.com/harryfrancis]>
 
 # TECHNOLOGY COLOPHON
 
