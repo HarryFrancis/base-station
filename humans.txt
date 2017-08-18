@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Harry Francis> -- <Develop> -- <HarryFrancis>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS
+    	- Bootstrap 4 (Grid only by default)
+    	- Normalize/Reboot
+    jQuery, Respond

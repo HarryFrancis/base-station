@@ -1,0 +1,44 @@
+// Link resets
+a {
+	&.no-ls {
+		color: inherit; 
+		
+		&:hover {
+			color: inherit;
+		}
+		&:active {
+			color: inherit;
+		}
+		&:visited {
+			color: inherit;
+		}
+	}
+
+	&.no-ul {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+// Margin remover
+.no-margin {
+	margin: 0!important;
+	&--top {
+		margin-top: 0!important; 
+	}
+	&--bottom {
+		margin-bottom: 0!important; 
+	}
+}

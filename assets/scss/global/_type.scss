@@ -1,0 +1,117 @@
+html {font-size: 1em;}
+
+body {
+  color: #000;
+  font-family: $bodyFont;
+  font-style: normal;
+  font-weight: 400; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p, .p {
+  margin: 26px 0; 
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400; 
+  @include media-breakpoint-up(md) {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
+
+li {
+  font-size: 16px;
+  line-height: 23px;
+  @include media-breakpoint-up(md) {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; 
+  font-family: $headingFont;
+}
+
+strong, em {
+  font-weight: 500; 
+}
+
+h1, .h1 {
+  margin: 26px 0; 
+  font-size: 32px;
+  line-height: 36px; 
+  @include media-breakpoint-up(md) {
+    margin: 36px 0; 
+    font-size: 58px;
+    line-height: 60px; 
+  }
+}
+
+h2, .h2 {
+  margin: 26px 0; 
+  font-size: 32px;
+  line-height: 36px; 
+  @include media-breakpoint-up(md) {
+    margin: 34px 0; 
+    font-size: 58px;
+    line-height: 58px 
+  }
+}
+
+h3, .h3 {
+  margin: 26px 0; 
+  font-size: 24px;
+  @include media-breakpoint-up(md) {
+    margin: 34px 0; 
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+h4, .h4 {
+  margin: 26px 0; 
+  font-size: 19px;
+  line-height: 26px; 
+  @include media-breakpoint-up(md) {
+    margin: 34px 0; 
+    font-size: 24px;
+    line-height: 32px; 
+  }
+}
+
+h5, .h5 {
+  margin: 26px 0 14px 0; 
+  font-size: 16px;
+  line-height: 23px; 
+  @include media-breakpoint-up(md) {
+    margin: 34px 0 16px 0;
+    font-size: 19px;
+    line-height: 27px; 
+  }
+}
+
+h6, .h6 {
+  font-size: 14px;  
+  font-weight: 600;  
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: $link-colour;
+  text-decoration: none;
+  &:active {
+    color: $link-colour--active;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $link-colour--visited;
+  }
+  &:hover {
+    color: $link-colour--hover;
+    text-decoration: underline;
+  }
+}

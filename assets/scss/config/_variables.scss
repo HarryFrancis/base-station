@@ -1,0 +1,27 @@
+// Colours
+$dark-grey: 	#2E2E2E;
+$grey: 			#3E3E3E;
+$light-grey: 	#4A4A4A;
+$faded-grey: 	#F2F2F2;
+$lime-green: 	#AFFF2B;
+$white: 		#fff;
+$black: 		#000;
+
+$colors: (
+  c-dark-grey: 		$dark-grey,
+  c-grey: 			$grey,
+  c-light-grey:   	$light-grey,
+  c-faded-grey: 	$faded-grey,
+  c-lime-green: 	$lime-green,
+  c-white: 			$white,
+  c-black: 			$black,
+);
+
+// Type
+$link-colour: #fff;
+$link-colour--active: #fff;
+$link-colour--visited: #fff;
+$link-colour--hover: #fff;
+
+$bodyFont: serif;
+$headingFont: sans-serif;

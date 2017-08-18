@@ -1,0 +1,56 @@
+// Generate a varible, background-colour class, border colour class and colour class from a given colour and name
+@each $value in $colors {
+	.#{nth($value, 1)} {
+		color: nth($value, 2);
+	}
+
+	.bg-#{nth($value, 1)} {
+		background-color: nth($value, 2);
+	}
+
+	.border-#{nth($value, 1)} {
+		border-color: nth($value, 2);
+	}
+}
+
+// Media quries
+ @mixin bpu($point) {
+   @if $point == xxl {
+     @media (min-width: 1300px) { @content; }
+  }
+   @else if $point == xl {
+     @media (min-width: 1120px) { @content; }
+  }
+   @else if $point == lg {
+     @media (min-width: 1024px) { @content; }
+  }
+   @else if $point == md {
+     @media (min-width: 767px) { @content; }
+  }
+   @else if $point == sm {
+     @media (min-width: 600px)  { @content; }
+  }
+   @else if $point == xs {
+     @media (min-width: 400px)  { @content; }
+  }
+}
+// Example usage, will be blue until 800px screen width, then it will change to red.
+// div {
+//     color: blue; 
+//     @include bp(tablet) {
+//         color: red; 
+//     }
+// }
+
+// Vertical align anything
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+// Example usage
+// .element p {
+//   @include vertical-align();
+// }
